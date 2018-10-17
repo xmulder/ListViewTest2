@@ -30,6 +30,7 @@ public class FruitArrayadapter extends ArrayAdapter<Fruit> {
         if (converView==null){
             view=LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
 
+            //viewHolder用来缓存控件,不用新建控件
             viewHolder=new ViewHolder();
             viewHolder.fruitName=(TextView) view.findViewById(R.id.fruit_name);
             viewHolder.fruitImage=(ImageView)view.findViewById(R.id.fruit_image);
